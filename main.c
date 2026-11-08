@@ -2,18 +2,22 @@
 
 int main(void)
 {
-    int input;
-    scanf("%d", &input);
-    if (input >= 90)
+    int score;
+    scanf("%d", &score);
+    if (score > 100)
+        printf("NG");
+    else if (score >= 90)
         printf("AA");
-    else if (input > 80)
+    else if (score >= 80)
         printf("A");
-    else if (input >= 70)
+    else if (score >= 70)
         printf("B");
-    else if (input >= 60)
+    else if (score >= 60)
         printf("C");
-    else if (input > 0)
+    else if (score >= 1)
         printf("D");
+    else if (score == 0)
+        printf("/");
     else
         printf("NG");
     return 0;
